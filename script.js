@@ -14,8 +14,8 @@ homeVideos.forEach(item => {
       channel
     }));
 
-    // Pindah ke halaman index.html
-    window.location.href = "index.html";
+    // Pindah ke halaman layout.html
+    window.location.href = "layout.html";
   });
 });
 
