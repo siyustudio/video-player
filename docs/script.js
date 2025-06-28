@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if (selected && mainPlayer && mainTitle && mainChannel) {
     const { src, title, channel } = JSON.parse(selected);
 
-    mainPlayer.src = "../" + src;
+    mainPlayer.src = "assets/" + src.split("/").pop();
     mainTitle.textContent = title;
     mainChannel.textContent = channel;
     mainPlayer.currentTime = 0;
@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", () => {
       const channel = item.getAttribute("data-channel");
 
       if (mainPlayer && mainTitle && mainChannel) {
-        mainPlayer.src = "../" + src;
+        mainPlayer.src = "assets/" + src.split("/").pop();
         mainTitle.textContent = title;
         mainChannel.textContent = channel;
         mainPlayer.currentTime = 0;
